@@ -1,1 +1,149 @@
+******//Home Screen HTML Start//******
+/Site Name & Details Start/
 
+<div id="dataContainer">
+    <p><strong></strong> <span id="stationName"></span></p>
+<br>
+
+<div id="dataContainer">
+    <br>
+       <p><strong></strong> <span id="companyName"></span></p>
+    
+        <p><strong></strong> <span id="email"></span></p>
+    
+        <p><strong></strong> <span id="website"></span></p>
+    </div>
+    
+    /Site Name & Details End/
+******//Home Screen HTML End//******
+
+******//Main Screen HTML Start//******
+/Emergency Slide & Auto/Mannual button Start /
+
+<div class="container">
+    <div class="left-side">
+        <div class="emgcontainer">
+            <h5>Emergency Stop</h5>
+            <label class="switch">
+                <input id="emergencyStopSwitch" type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+    <div class="right-side">
+        <h5>Mode Selection Auto/Manual</h5>
+        <button id="autoButton" class="modalButton auto">Auto</button>
+        <button id="manualButton" class="modalButton manual">Manual</button>
+ <button id="stopButton" class="modalButton">MOV</button>
+        <div class="box" id="autoBox">
+            <h5>Operation Start/stop</h5>
+            <button id="startButton" class="modalButton">Operate</button>
+            
+        </div>
+    </div>
+</div>
+
+/Emergency Slide & Auto/Mannual button End /
+******//Main Screen HTML END//******
+
+******//Alarm Screen HTML Start//******
+/Alarm Labels Start /
+
+<div id="label1"></div>
+    <div id="label2"></div>
+    <div id="label3"></div>
+    <div id="label4"></div>
+    <div id="label5"></div>
+    <div id="label6"></div>
+    <div id="label7"></div>
+    <div id="label8"></div>
+    <div id="label9"></div>
+    <div id="label10"></div>
+    <div id="label11"></div>
+    <div id="label12"></div>
+    <div id="label13"></div>
+    <div id="label14"></div>
+    <div id="label15"></div>
+    <div id="label16"></div>
+    <div id="label17"></div>
+    <div id="label18"></div>
+    <div id="label19"></div>
+    <div id="label20"></div>
+    <div id="label21"></div>
+    <div id="label22"></div>
+    <div id="label23"></div>
+    <div id="label24"></div>
+  <div id="label25"></div>
+ <div id="label26"></div>
+
+ /Alarm Labels End/
+
+ /Alarm Reset Start/
+
+ <button id="resetBtn" class="resetbtn">Reset</button>
+ 
+ /Alarm Reset End/
+ 
+******//Alarm Screen HTML End//******
+
+******//Alarm LOG Screen HTML Start//******
+/Alarm Search-Date Start/
+
+<div class="controls25">
+    <label for="fromDate">From:</label>
+    <input type="date" id="fromDate">
+    <label for="toDate">To:</label>
+    <input type="date" id="toDate">
+    <input type="text" id="searchInput" placeholder="Search by Alarm...">
+    <button id="searchButton">Search</button>
+</div>
+
+/Alarm Search-Date End/
+
+/Alarm data table Start/
+
+<div class="container25">
+        
+    <div class="table-container25">
+        <table id="table25">
+            <thead>
+                <tr>
+                    <th class="tr1">S.No</th>
+                    <th class="tr2">Alarm</th>
+                    <th class="tr3">Start Time</th>
+                    <th class="tr4">End Time</th>
+                    <th class="tr5">Status</th>
+                </tr>
+            </thead>
+            <tbody id="table-body25">
+                <!-- Rows will be appended here by jQuery -->
+            </tbody>
+          
+        </table>
+       
+    </div>
+   
+</div>
+
+/Alarm data table End/
+
+/Alarm Pegination Start/
+
+<div class="pagination">
+    <select id="limitSelect">
+        <option value="5">5</option>
+        <option value="10" selected>10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+    </select>
+    <button id="prevPage">Previous</button>
+    <span id="currentPage">Page 1</span>
+    <button id="nextPage">Next</button>
+    <div id="loading">Loading...</div>
+</div>
+
+
+/Alarm Pegination End/
+
+
+******//Alarm LOG Screen HTML End//******
