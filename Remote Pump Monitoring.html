@@ -144,6 +144,141 @@
 
 
 /Alarm Pegination End/
-
-
 ******//Alarm LOG Screen HTML End//******
+
+******//Manual Screen HTML Start//******
+/Auto-Manual Indication button Start/
+
+<button id="indicationButton8" class="mybutt8"></button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="websocket.js"></script>
+
+/Auto-Manual Indication button End/
+
+/Manual Control Tabel Start/
+<table>
+    <tr>
+        
+        <td>
+            <div id="CPPumpContainer"></div>
+        </td>
+    </tr>
+    <tr>
+        
+        <td>
+            <div id="SPPumpContainer"></div>
+        </td>
+    </tr>
+    <tr>
+        
+        <td>
+            <div id="movContainer"></div>
+        </td>
+    </tr>
+</table>
+
+/Manual Control Tabel End/
+******//Manual Screen HTML End//******
+
+******//Schedule Screen HTML Start//******
+/Schedule Tabel Start/
+
+<div class="table-container">
+    <table id="scheduleTable">
+        <thead>
+            <tr>
+                <th class="schedule-column" style="color: white;" rowspan="2">SCHEDULE</th>
+              
+
+                <!-- Dynamic SP Column Headers -->
+                <th class="spHeader" colspan="2" style="color: white;">SP1</th>
+                <th class="spHeader" colspan="2" style="color: white;">SP2</th>
+                <th class="spHeader" colspan="2" style="color: white;">SP3</th>
+                <th class="spHeader" colspan="2" style="color: white;">SP4</th>
+                <th class="spHeader" colspan="2" style="color: white;">SP5</th>
+               
+                <!-- Dynamic CP Column Headers -->
+                <th class="cpHeader" colspan="2"  style="color: white;">CP1</th>
+                <th class="cpHeader" colspan="2"  style="color: white;">CP2</th>
+                <th class="cpHeader" colspan="2"  style="color: white;">CP3</th>
+                <th class="cpHeader" colspan="2"  style="color: white;">CP4</th>
+                <th class="cpHeader" colspan="2"  style="color: white;">CP5</th>
+            </tr>
+            <tr>
+                <!-- SP Start and End Time Headers -->
+                <th class="sp1" colspan="2"  style="color: white;">Start Time : Stop Time</th>
+                <th class="sp2" colspan="2"  style="color: white;">Start Time : Stop Time</th>
+                <th class="sp3" colspan="2"  style="color: white;">Start Time : Stop Time</th>
+                <th class="sp4" colspan="2"  style="color: white;">Start Time : Stop Time</th>
+                <th class="sp5" colspan="2"  style="color: white;">Start Time : Stop Time</th>
+                                    
+    
+                <!-- CP Start and End Time Headers -->
+                <th class="cp1" colspan="2"  style="color: white;">Start Time : Stop Time</th>
+                <th class="cp2" colspan="2"  style="color: white;">Start Time : Stop Time</th>
+                <th class="cp3" colspan="2"  style="color: white;">Start Time : Stop Time</th>
+                <th class="cp4" colspan="2"  style="color: white;">Start Time : Stop Time</th>
+                <th class="cp5" colspan="2"  style="color: white;">Start Time : Stop Time</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Table body will be added dynamically -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Overlay to darken the background -->
+<div id="overlay"></div>
+
+/Schedule Tabel End/
+******//Schedule  Screen HTML End//******
+
+******//Top bar HTML Start//******
+/Top bar Indication Start/
+
+<button id="indicationButton1" class="mybutt"></button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="websocket.js"></script>
+
+<button id="indicationButton2" class="mybutt"></button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="websocket.js"></script>
+
+<button id="indicationButton4" class="mybutt"></button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="websocket.js"></script>
+
+<button id="indicationButton5" class="mybutt"></button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="websocket.js"></script>
+
+<button id="indicationButton3" class="mybutt"></button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="websocket.js"></script>
+
+<button id="indicationButton6" class="mybutt6"></button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="websocket.js"></script>
+
+<button id="indicationButton7" class="mybutt7"></button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="websocket.js"></script>
+
+/Top bar Indication End/
+
+/Top bar time Start/
+<div id="time-container-mob">
+    <div id="time"></div>
+    <div id="date"></div>
+    <div id="day"></div>
+  </div>
+/Top bar time End/
+******//Top bar HTML End//******
+
+******//Site Screen HTML Start//******
+/Top bar time Start/
+
+<button class="portButton" value="{2}" style="font-size: 20px;">Site Name: {1}</button>
+
+/Top bar time End/
+******//Site Screen HTML End//******
